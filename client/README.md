@@ -16,18 +16,17 @@ The great big TODO list
 ### General
 - [ ] Listen for escape key
 - [ ] Display TODO lists
+- [ ] Send requests to Apollo
 
+- [x] [1/14/2020] refactor into `client` directory
 - [x] [1/13/2020] replace favicon
 - [x] [1/12/2020] Background color
 
 ## Back End
-- [ ] MongoDB server setup
-- [ ] express server setup
+- [ ] `MONGODB` server setup
+- [ ] `EXPRESS` server setup
+- [ ] `APOLLO` Receive requeests from client
 
-- [x] [1/14/2020] apollo nodemon setup
-- [x] [1/14/2020] Apollo server setup
-- [x] [1/14/2020] `.env.development` variables readable from app
-
-
-## Other
-- [ ] Git commits aren't showing up as my own
+- [x] [1/14/2020] `APOLLO` nodemon setup
+- [x] [1/14/2020] `APOLLO` server setup
+- [x] [1/14/2020] `APOLLO` `.env` variables readable from
