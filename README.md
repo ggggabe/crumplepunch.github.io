@@ -1,20 +1,28 @@
 # TODO
 
+The great big TODO list
+
 ## Design Work
-- [x] favicon design    (32x32)
-- [ ] apple touch icon  (180x180)
+
+### General
+- [ ] apple touch icon (180x180)
+- [x] [1/13/2020] favicon design (32x32)
 
 ### Figma
-- [x] Landing page
 - [ ] Mobile view
+- [x] [1/12/2020] Landing page
 
 ## Front End
 ### General
-- [x] replace favicon
-- [x] Background color
 - [ ] Listen for escape key
 - [ ] Display TODO lists
 
+- [x] [1/13/2020] replace favicon
+- [x] [1/12/2020] Background color
+
 ## Back End
-- [ ] MongoDB hookup
-- [x] .env.development variables readable from app
+- [ ] MongoDB server setup
+- [ ] express server setup
+
+- [x] [1/14/2020] Apollo server setup
+- [x] [1/14/2020] `.env.development` variables readable from app
