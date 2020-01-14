@@ -27,3 +27,7 @@ The great big TODO list
 - [x] [1/14/2020] apollo nodemon setup
 - [x] [1/14/2020] Apollo server setup
 - [x] [1/14/2020] `.env.development` variables readable from app
+
+
+## Other
+- [ ] Git commits aren't showing up as my own
