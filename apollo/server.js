@@ -1,27 +1,27 @@
-require('dotenv').config()
-const debug = require('debug')('gm:apollo-server')
-const { ApolloServer, gql } = require('apollo-server')
+import dotenv from 'dotenv'
 
-// The GraphQL schema
-const typeDefs = gql`
-  type Query {
-    "A simple type for getting started!"
-    hello: String
-  }
-`
+import Debug from 'debug'
+import apollo from 'apollo-server'
+import gql from 'graphql-tag'
+import fs from 'fs'
+dotenv.config()
 
+const debug = Debug('gm:apollo-server')
+const typeDefs = gql`${fs.readFileSync(fs.realpathSync('.').concat('/schema.gql'), 'utf8')}`
 
 // A map of functions which return data for the schema.
 const resolvers = {
   Query: {
-    hello: () => 'world',
-  },
+    hello: () => 'world'
+  }
 }
-debug({resolvers})
 
+debug({ resolvers })
+
+const { ApolloServer } = apollo
 const server = new ApolloServer({
   typeDefs,
-  resolvers,
+  resolvers
 })
 
 server.listen().then(({ url }) => {
