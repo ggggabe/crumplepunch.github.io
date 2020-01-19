@@ -11,7 +11,7 @@ export const JournalHeading = ({ title, subtitle }) =>
 export const JournalBody = ({ mdFile }) =>
   <ReactMarkdown source={mdFile} />
 
-export const JournalEntry = ({ props }) =>
+export const JournalEntry = props =>
   <Media className='journal-entry'>
     <Media body>
       <JournalHeading {...props} />
