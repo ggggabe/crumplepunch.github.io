@@ -18,8 +18,8 @@ The great big TODO list
 - [ ] Display TODO lists
 - [ ] Send requests to Apollo
 - [ ] ToDo component
-- [ ] Journal component
 
+- [x] [1/19/2020] Journal component (heading, body, markdown rendering)
 - [x] [1/19/2020] SupaClean Refactor components
 - [x] [1/14/2020] refactor into `client` directory
 - [x] [1/13/2020] replace favicon
