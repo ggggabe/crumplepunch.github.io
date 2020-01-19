@@ -30,6 +30,7 @@ The great big TODO list
 - [ ] `EXPRESS` server setup
 - [ ] `APOLLO` Receive requeests from client
 
+- [x] [1/19/2020] `APOLLO` External schema file, and switch package type to module, make package private
 - [x] [1/14/2020] `APOLLO` nodemon setup
 - [x] [1/14/2020] `APOLLO` server setup
 - [x] [1/14/2020] `APOLLO` `.env` variables readable from
