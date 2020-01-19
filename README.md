@@ -17,6 +17,8 @@ The great big TODO list
 - [ ] Listen for escape key
 - [ ] Display TODO lists
 - [ ] Send requests to Apollo
+- [ ] ToDo component
+- [ ] Journal component
 
 - [x] [1/14/2020] refactor into `client` directory
 - [x] [1/13/2020] replace favicon
