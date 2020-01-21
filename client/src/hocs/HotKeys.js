@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useEffect, useCallback } from 'react'
 import Debug from 'debug'
 
 const debug = Debug('HOC:HotKeys')
@@ -8,9 +8,9 @@ const debug = Debug('HOC:HotKeys')
  */
 
 const withHotKeys = listeners => Component => props => {
-  const fn = useCallback(({keyCode}) => {
-    return listeners[keyCode] && listeners[keyCode](), [listeners]
-  })
+  const fn = useCallback(({ keyCode }) => {
+    return listeners[keyCode] && listeners[keyCode]()
+  }, [])
 
   debug({ listeners, fn })
 
@@ -21,7 +21,7 @@ const withHotKeys = listeners => Component => props => {
     return () => document.removeEventListener('keydown', fn)
   }, [fn])
 
-  return (<Component />)
+  return <Component />
 }
 
 export { withHotKeys }
