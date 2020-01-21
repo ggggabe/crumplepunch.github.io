@@ -9,9 +9,9 @@ debug({ withHotKeys })
 const EscapeJournal = withHotKeys({ 27: () => { debug('u pressed escape') } })(JournalEntry)
 
 const fakeJournalProps = {
-  title: "A Test Journal Title",
-  subtitle: "this is a subtitle",
-  body: "This is body text"
+  title: 'A Test Journal Title',
+  subtitle: 'this is a subtitle',
+  body: 'This is body text'
 }
 
 export const App = () =>
