@@ -14,11 +14,11 @@ The great big TODO list
 
 ## Front End
 ### General
-- [ ] Listen for escape key
 - [ ] Display TODO lists
 - [ ] Send requests to Apollo
 - [ ] ToDo component
 
+- [x] [1/21/2020] Add HOC for using HotKeys
 - [x] [1/19/2020] Journal component (heading, body, markdown rendering)
 - [x] [1/19/2020] SupaClean Refactor components
 - [x] [1/14/2020] refactor into `client` directory
