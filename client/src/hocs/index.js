@@ -1,1 +1,2 @@
-export * from './HotKeys'
+export * from './withHotKeys'
+export * from './withTheme'

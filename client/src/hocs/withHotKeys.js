@@ -7,7 +7,7 @@ const debug = Debug('HOC:HotKeys')
  * Where listeners is a object of <keycode>: <fn>
  */
 
-const withHotKeys = listeners => Component => props => {
+export const withHotKeys = listeners => Component => props => {
   const fn = useCallback(({ keyCode }) => {
     return listeners[keyCode] && listeners[keyCode]()
   }, [])
@@ -24,4 +24,3 @@ const withHotKeys = listeners => Component => props => {
   return <Component />
 }
 
-export { withHotKeys }
