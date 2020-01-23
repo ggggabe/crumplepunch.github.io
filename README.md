@@ -14,9 +14,10 @@ The great big TODO list
 
 ## Front End
 ### General
-- [ ] Display TODO lists
+- [ ] Display this list as an interactable todo thing with db hook ups
 - [ ] Send requests to Apollo
 - [ ] ToDo component
+- [ ] Routing
 
 - [x] [1/21/2020] Add HOC for using HotKeys
 - [x] [1/19/2020] Journal component (heading, body, markdown rendering)
