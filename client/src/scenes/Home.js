@@ -7,12 +7,12 @@ import {
   withTheme
 } from 'hocs'
 
-const debug = Debug('components:App')
-const EscapeJournal = withHotKeys({ 27: () => { debug('u pressed escape') } })(JournalEntry)
+const debug = Debug('scenes:Home')
 
 export const Home = withTheme(() =>
-  <header>
-    <h1>Gabe Marquez</h1>
-    <EscapeJournal />
-  </header>
+  <div>
+    <header>
+      <h1>Gabe Marquez</h1>
+    </header>
+  </div>
 )

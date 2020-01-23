@@ -7,15 +7,14 @@ import {
 } from 'react-router-dom'
 
 import './index.scss'
-import { Home } from './scenes'
-import { JournalEntry } from './components'
+import { Home, Journal } from './scenes'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path='/journal'>
-        <JournalEntry />
+        <Journal theme='theme-01' />
       </Route>
 
       <Route path='/'>
