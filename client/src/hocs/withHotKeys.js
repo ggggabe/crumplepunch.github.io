@@ -23,4 +23,3 @@ export const withHotKeys = listeners => Component => props => {
 
   return <Component />
 }
-
