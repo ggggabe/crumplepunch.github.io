@@ -1,6 +1,6 @@
 import React from 'react'
-import { withHotKeys } from '../hocs'
-import { JournalEntry } from './Journal'
+import { withHotKeys } from './hocs'
+import { JournalEntry } from './components'
 import Debug from 'debug'
 const debug = Debug('components:App')
 
