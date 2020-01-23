@@ -17,8 +17,11 @@ The great big TODO list
 - [ ] Display this list as an interactable todo thing with db hook ups
 - [ ] Send requests to Apollo
 - [ ] ToDo component
-- [ ] Routing
 
+- [x] [1/23/2020] Journal scene
+- [x] [1/23/2020] Reorganize client into scenes, components, hocs, and keep index for routing.
+- [x] [1/23/2020] npm link so we can use `hocs` nicely. TBD whether this is a good idea in the long run
+- [x] [1/23/2020] Routing
 - [x] [1/21/2020] Add HOC for using HotKeys
 - [x] [1/19/2020] Journal component (heading, body, markdown rendering)
 - [x] [1/19/2020] SupaClean Refactor components
