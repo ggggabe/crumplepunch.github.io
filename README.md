@@ -1,6 +1,6 @@
 # TODO
 
-The great big TODO list
+The great big TODO list for the GREATEST PERSONALIZED TOOLKIT DISGUISED AS A STATIC PAGE
 
 ## Design Work
 
@@ -17,6 +17,7 @@ The great big TODO list
 - [ ] Display this list as an interactable todo thing with db hook ups
 - [ ] Send requests to Apollo
 - [ ] ToDo component
+- [x] Newsletter Designer Component
 
 - [x] [1/23/2020] Journal scene
 - [x] [1/23/2020] Reorganize client into scenes, components, hocs, and keep index for routing.
