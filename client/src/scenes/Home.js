@@ -11,7 +11,7 @@ const debug = Debug('components:App')
 const EscapeJournal = withHotKeys({ 27: () => { debug('u pressed escape') } })(JournalEntry)
 
 export const Home = withTheme(() =>
-  <header >
+  <header>
     <h1>Gabe Marquez</h1>
     <EscapeJournal />
   </header>

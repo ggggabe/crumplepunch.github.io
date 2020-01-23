@@ -19,7 +19,7 @@ ReactDOM.render(
       </Route>
 
       <Route path='/'>
-        <Home theme='theme-01'/>
+        <Home theme='theme-01' />
       </Route>
 
     </Switch>
