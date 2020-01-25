@@ -14,13 +14,12 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path='/journal'>
-        <Journal theme='theme-01' />
+        <Journal />
       </Route>
 
       <Route path='/'>
-        <Home theme='theme-01' />
+        <Home />
       </Route>
-
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')

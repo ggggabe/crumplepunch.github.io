@@ -17,8 +17,9 @@ The great big TODO list for the GREATEST PERSONALIZED TOOLKIT DISGUISED AS A STA
 - [ ] Display this list as an interactable todo thing with db hook ups
 - [ ] Send requests to Apollo
 - [ ] ToDo component
-- [x] Newsletter Designer Component
+- [ ] Newsletter Designer Component
 
+- [x] [1/25/2020] Upgrade theme hoc to have a default, and a maintained list of themes
 - [x] [1/23/2020] Journal scene
 - [x] [1/23/2020] Reorganize client into scenes, components, hocs, and keep index for routing.
 - [x] [1/23/2020] npm link so we can use `hocs` nicely. TBD whether this is a good idea in the long run
