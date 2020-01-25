@@ -7,7 +7,7 @@ import {
 
 const debug = Debug('scenes:Home')
 
-export const Home = withTheme(({theme}) => (
+export const Home = withTheme(({theme}) =>
   <div>
     <header>
       <h1>Gabe Marquez</h1>
