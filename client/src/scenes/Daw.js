@@ -1,6 +1,9 @@
 import React from 'react'
 import Debug from 'debug'
-import { Descriptor } from '../components'
+import {
+  Descriptor,
+  Microphone
+} from '../components'
 import {
   withDevMode,
   withTheme
@@ -10,7 +13,8 @@ const debug = Debug('scenes:daw')
 
 const DawInterface = props => {
   return <div className='daw container main-container'>
-    <Descriptor>Daw Interface</Descriptor>
+    <Descriptor {...props} title='DAW Interface' />
+    <Microphone />
   </div>
 }
 
