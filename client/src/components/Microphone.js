@@ -1,5 +1,5 @@
 import React, {
-  useState,
+  useState
 } from 'react'
 import classNames from 'classnames'
 import Debug from 'debug'
@@ -8,7 +8,8 @@ import {
 } from '.'
 
 import {
-  withDevMode
+  withDevMode,
+  withShowHide
 } from 'hocs'
 
 const debug = Debug('components:Microphone')
@@ -16,49 +17,47 @@ const debug = Debug('components:Microphone')
 const MicrophoneIcon = ({
   display,
   toggleDisplay,
-  changeName
+  changeName,
+  className
 }) => {
   debug({
+    className,
     display,
     toggleDisplay,
-    changeName,
-    cn: classNames('microphone', {
-      hidden: display
-    })
+    changeName
   })
 
   return (
-    <div className={classNames('microphone', {
-      hidden: !!display
-    })}>
-      <div onClick={event => {
-        debug({event})
-        event.preventDefault()
-        toggleDisplay()
-
-      }}>ToggleDisplay</div>
-      <code className={{ display }}>MIC</code>
+    <div className={classNames(className, 'microphone-icon')}>
+      <code>MIC</code>
     </div>
   )
 }
+
+const MicrophoneControls = withShowHide(MicrophoneIcon)
 
 export const Microphone = withDevMode(props => {
   debug({
     props
   })
-  const {display, name} = props
+  const { display, name } = props
   const [displayMic, setDisplayMic] = useState(display)
   const [displayName, setDisplayName] = useState(name)
 
+  const micProps = {
+    name: displayName,
+    editName: name => setDisplayName(name)
+  }
+
+  const showHideProps = {
+    display: displayMic,
+    showHide: () => setDisplayMic(!displayMic)
+  }
+
   return (
     <div>
-      <Descriptor title="Microphone Component" />
-      <MicrophoneIcon
-        display={displayMic}
-        name={displayName}
-        toggleDisplay={() => setDisplayMic(!displayMic)}
-        changeName={name => setDisplayName(name)}
-      />
+      <Descriptor title='Microphone Component' />
+      <MicrophoneControls {...micProps} {...showHideProps} />
     </div>
   )
 })

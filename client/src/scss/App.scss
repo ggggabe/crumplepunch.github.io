@@ -9,6 +9,10 @@ $linkColor: $black;
 
 $linkHoverColor: white;
 
+.hidden {
+  opacity: 0;
+}
+
 .container {
   text-align: center;
   display: block;
