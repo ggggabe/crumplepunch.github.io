@@ -2,12 +2,10 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Debug from 'debug'
 import {
-  withTheme,
-  withAnimation
+  withTheme
 } from 'hocs'
 
 const debug = Debug('scenes:Home')
-const Code = props => <span {...props}>code</span>
 
 const HomeNav = () => (
   <Nav defaultActiveKey='/home'>
