@@ -4,7 +4,8 @@ import Debug from 'debug'
 const debug = Debug('HOC:withDevMode')
 
 export const withDevMode = Component => props => {
-  return <Component dev />
+  debug({ props })
+  return <Component {...props} dev />
 }
 
 debug('loaded')
