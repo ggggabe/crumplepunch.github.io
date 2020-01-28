@@ -12,7 +12,10 @@ const typeDefs = gql`${fs.readFileSync(fs.realpathSync('.').concat('/schema.gql'
 // A map of functions which return data for the schema.
 const resolvers = {
   Query: {
-    hello: () => 'world'
+    hello: () => {
+      debug("I've been hit!")
+      return 'world'
+    }
   }
 }
 
