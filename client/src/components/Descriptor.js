@@ -7,12 +7,20 @@ import {
 
 const debug = Debug('components:Descriptor')
 
-export const Descriptor = withTheme(withDevMode(props => {
-  debug(props)
+export const Descriptor = withDevMode(withTheme(({
+  dev,
+  title
+}) => {
+  debug({
+    dev,
+    title
+  })
+
   return (
-    <div>
-      {props.dev && <code>dev mode</code>}
-    </div>
+    <code>
+      {dev && <code>dev mode: {title}</code>}
+    </code>
   )
 }))
+
 debug('loaded')
