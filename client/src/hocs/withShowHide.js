@@ -9,7 +9,7 @@ export const withShowHide = Component => props => {
 
   const hidden = props.display
   const cn = classNames(props.classNames, { hidden })
-  debug({ prop })
+  debug({ props })
 
   return (
     <div className='hoc-show-hide'>
