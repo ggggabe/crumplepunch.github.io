@@ -1,24 +1,19 @@
 import React from 'react'
-import Nav from 'react-bootstrap/Nav'
 import Debug from 'debug'
-import Descriptor from '../components'
+import { Descriptor } from '../components'
 
 import {
-  withTheme
+  withDevMode
 } from 'hocs'
 
 const debug = Debug('scenes:daw')
 
-const digestConfig = props => ({
-})
-
-
 const DawInterface = props => {
-
   return <div>
     <Descriptor>Daw Interface</Descriptor>
   </div>
 }
 
+export const UntitledDaw = withDevMode(DawInterface)
 
-export const UntitledDaw = withThem(props => digestConfig(props))
+debug('loaded')

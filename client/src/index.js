@@ -7,14 +7,18 @@ import {
 } from 'react-router-dom'
 
 import './index.scss'
-import { Home, Journal } from './scenes'
+import {
+  Home,
+  //Journal,
+  UntitledDaw
+} from './scenes'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path='/journal'>
-        <Journal />
+      <Route path='/untitled-daw'>
+        <UntitledDaw />
       </Route>
 
       <Route path='/'>

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {
+  useState
+} from 'react'
 import Debug from 'debug'
-import
+import { withDevMode } from 'hocs'
 
 const debug = Debug('components:Descriptor')
 
 const csvLineParse = (str, del) => {
-  if ( str.length ) {
+  if (str.length) {
     return str.split(del)
   }
 
@@ -14,6 +16,8 @@ const csvLineParse = (str, del) => {
 
 export const Descriptor = withDevMode(props => {
   const { className, dev } = props
+  debug({ props })
+
   const [cn, setClassName] = useState(className)
 
   if (dev) {
@@ -24,7 +28,7 @@ export const Descriptor = withDevMode(props => {
   }
 
   return (
-    <div { className }>
-    </div>
+    <div className={className} />
   )
 })
+debug('loaded')

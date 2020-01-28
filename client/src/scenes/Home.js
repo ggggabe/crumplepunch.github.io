@@ -9,14 +9,14 @@ import {
 
 const debug = Debug('scenes:Home')
 
-const Code = props => <span {...props} >code</span>
+const Code = props => <span {...props}>code</span>
 
 const DumbHeight = withAnimation(Code)
 
 const HomeNav = () => (
-  <Nav defaultActiveKey="/home">
+  <Nav defaultActiveKey='/home'>
     <Nav.Item>
-      <Nav.Link eventKey="code" >
+      <Nav.Link eventKey='code'>
         <DumbHeight
           aid='code'
           startValue={12}
@@ -24,28 +24,29 @@ const HomeNav = () => (
           property='height'
           animatedStyle={{
             height: 12
-          }}>
+          }}
+        >
           code
         </DumbHeight>
       </Nav.Link>
     </Nav.Item>
 
     <Nav.Item>
-      <Nav.Link eventKey="music">
-        music
+      <Nav.Link href='/untitled-daw' eventKey='untitled-daw'>
+        Untitled Daw
       </Nav.Link>
     </Nav.Item>
 
     <Nav.Item>
-      <Nav.Link eventKey="games">
+      <Nav.Link eventKey='games'>
         sound
       </Nav.Link>
     </Nav.Item>
   </Nav>
 )
 
-export const Home = withTheme(({theme}) =>
-  <div className="main-container">
+export const Home = withTheme(({ theme }) =>
+  <div className='main-container'>
     <header>
       <h1>Gabe Marquez</h1>
     </header>
