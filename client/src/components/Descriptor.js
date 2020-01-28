@@ -10,7 +10,7 @@ const debug = Debug('components:Descriptor')
 export const Descriptor = withTheme(withDevMode(props => {
   debug(props)
   return (
-    <div className="main-container">
+    <div>
       {props.dev && <code>dev mode</code>}
     </div>
   )
