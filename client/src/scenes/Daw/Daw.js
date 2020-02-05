@@ -3,7 +3,7 @@ import Debug from 'debug'
 import {
   Descriptor,
   Microphone
-} from '../components'
+} from '../../components'
 import {
   withDevMode,
   withTheme
