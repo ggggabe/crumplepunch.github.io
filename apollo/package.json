@@ -1,7 +1,6 @@
 {
-  "name": "gm-server",
+  "name": "@crumplepunch/apollo-server",
   "version": "1.0.0",
-  "private": true,
   "description": "Apollo server",
   "main": "index.js",
   "scripts": {
@@ -19,5 +18,6 @@
     "debug": "^4.1.1",
     "nodemon": "^2.0.2"
   },
-  "type": "module"
+  "type": "module",
+  "bin": "cli.js"
 }

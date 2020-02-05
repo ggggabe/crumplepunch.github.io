@@ -21,12 +21,17 @@ const resolvers = {
 
 debug({ resolvers })
 
-const { ApolloServer } = apollo
-const server = new ApolloServer({
-  typeDefs,
-  resolvers
-})
+export default function init() {
+  const { ApolloServer } = apollo
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers
+  })
 
-server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`)
-})
+  server.listen().then(({ url }) => {
+    console.log(`🚀 Server ready at ${url}`)
+    debug(`🚀 Server ready at ${url}`)
+  })
+}
+
+init()
