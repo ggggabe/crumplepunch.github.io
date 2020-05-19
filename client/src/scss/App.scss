@@ -1,20 +1,48 @@
-$backgroundColor: #FFCC16;
-$typeColor: black;
-$linkColor: black;
+$yellow: #FFCC16;
+$black: #222;
+$green: #1E7E50;
+$blue: #2F9885;
+$red: #CD5D44;
+
+$typeColor: $black;
+$linkColor: $black;
+
 $linkHoverColor: white;
 
-.theme-01 {
-  text-align: center;
+.hidden {
+  opacity: 0;
+}
 
-  .main-container {
-    background-color: $backgroundColor;
+.container {
+  text-align: center;
+  display: block;
+
+  color: $black;
+
+  &.main-container {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  }
+}
+
+
+.theme-01 {
+  .container {
     font-size: calc(10px + 2vmin);
-    color: $typeColor;
+    &.main-container {
+      flex-direction: column;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &.home {
+      background-color: $yellow;
+      color: $black;
+    }
+
+    &.daw {
+      background-color: $black;
+      color: $yellow;
+    }
   }
 
   a {
@@ -24,4 +52,5 @@ $linkHoverColor: white;
       color: $linkHoverColor;
     }
   }
+
 }
